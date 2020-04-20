@@ -1,0 +1,16 @@
+[masters]
+master-0.ocp4poc.example.com
+master-1.ocp4poc.example.com
+master-2.ocp4poc.example.com
+
+[workers]
+ocs-0.ocp4poc.example.com
+ocs-1.ocp4poc.example.com
+ocs-2.ocp4poc.example.com
+worker-0.ocp4poc.example.com
+worker-1.ocp4poc.example.com
+
+[ocs]
+ocs-0.ocp4poc.example.com
+ocs-1.ocp4poc.example.com
+ocs-2.ocp4poc.example.com

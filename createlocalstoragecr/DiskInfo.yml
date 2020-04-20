@@ -1,0 +1,14 @@
+---
+- hosts: ocs
+  strategy: linear
+  remote_user: core
+  vars:
+    ocs_devices:
+      - sdb
+#     - sdc
+  tasks:
+    - name: Create LocalStorage CR for OCS
+      template:
+        src: local_storage.j2
+        dest: ocs_local_storage_config.yaml
+      delegate_to: localhost
