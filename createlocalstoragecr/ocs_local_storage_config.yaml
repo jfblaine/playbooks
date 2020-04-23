@@ -11,6 +11,10 @@ spec:
             operator: In
             values:
               - ''
+  tolerations:
+    - key: node.ocs.openshift.io/storage
+      operator: Equal
+      value: "true"
   storageClassDevices:
     - storageClassName: localblock
       volumeMode: Block
