@@ -11,6 +11,12 @@ spec:
             operator: In
             values:
               - ''
+{% if add_toleration == true %}
+  tolerations:
+    - key: node.ocs.openshift.io/storage
+      operator: Equal
+      value: "true"
+{% endif %}
   storageClassDevices:
     - storageClassName: localblock
       volumeMode: Block

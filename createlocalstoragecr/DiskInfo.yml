@@ -6,6 +6,7 @@
     ocs_devices:
       - sdb
 #     - sdc
+    add_toleration: false
   tasks:
     - name: Create LocalStorage CR for OCS
       template:
