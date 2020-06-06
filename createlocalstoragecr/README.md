@@ -13,3 +13,5 @@ Then set the add_toleration var to true in DiskInfo.yml.  If not, then false.
 ansible-playbook DiskInfo.yml
 
 look for output file "ocs_local_storage_config.yaml"
+
+ls -l /dev/disk/by-id/
